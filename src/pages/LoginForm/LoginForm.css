@@ -1,0 +1,182 @@
+.formCont{
+    background:#FAFAFA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCont{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.loginForm{
+    background: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formCont h1{
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+.formCont h4{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #737373;
+}
+
+.formCont p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #737373;
+    text-align: center;
+}
+
+.formCont span{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color:#633CFF;
+    cursor: pointer;
+}
+
+.formCont button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+  
+  .formCont button.disabled {
+    background-color: rgba(99, 60, 255, 0.25);
+    color: #fff;
+    pointer-events: none;
+  }
+  
+  .formCont button:not(.disabled) {
+    background: #633CFF;
+    color: #fff;
+  }
+  
+
+
+@media screen and (max-width: 465px) {
+    .formCont{
+        background: #fff;
+    }
+
+    .logo{
+        justify-content: initial;
+    }
+
+    .loginForm{
+        padding: 1.5rem 0;
+    } 
+
+    .formCont button{
+        padding: 14px;
+    }
+
+    .mainCont{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .mainCont{
+        width: 365px;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .mainCont{
+        width: 355px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .mainCont{
+        width: 345px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .mainCont{
+        width: 335px;
+    }
+
+    .formCont p{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mainCont{
+        width: 325px;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .mainCont{
+        width: 310px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
