@@ -4,6 +4,7 @@ import EmailInput from '../../components/EmailInput/EmailInput';
 import PasswordInput from '../../components/PasswordInput/PasswordInput';
 import "./LoginForm.css";
 
+
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,6 +14,9 @@ const LoginForm = () => {
   const [passwordError, setPasswordError] = useState("")
   const navigate = useNavigate();
 
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     let hasError = false
@@ -20,12 +24,18 @@ const LoginForm = () => {
     if(email === ""){
       setEmailError("Can't be empty")
       hasError = true
+    } else if(!emailPattern.test(email)){
+      setEmailError("Invalid email format")
+      hasError = true
     } else {
       setEmailError("")
     }
 
     if(password === ""){
       setPasswordError("Please check again")
+      hasError = true
+    } else if(!passwordPattern.test(password)){
+      setPasswordError("Password must be atleast 8 characters")
       hasError = true
     } else {
       setPasswordError("")
@@ -38,7 +48,7 @@ const LoginForm = () => {
     }
   };
 
-  const isButtonDisabled = email !== "" || password !== "";
+  const isButtonDisabled = (email !== "" && !emailPattern.test(email)) || (password !== "" && !passwordPattern.test(password));
 
   return (
     <div className="formCont">
@@ -74,13 +84,6 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-
-
-
-
-
-
 
 
 

@@ -11,7 +11,7 @@ const PasswordInput = ({confirmPassword, setConfirmPassword, focused, setFocused
         </div>
         <input 
         type="password"
-        id='password'
+        id='password2'
         placeholder='Enter your password'
         value={confirmPassword}
         onChange={(e) => setConfirmPassword(e.target.value)}
@@ -25,3 +25,31 @@ const PasswordInput = ({confirmPassword, setConfirmPassword, focused, setFocused
 }
 
 export default PasswordInput
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

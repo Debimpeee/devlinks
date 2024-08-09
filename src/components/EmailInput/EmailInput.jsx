@@ -17,6 +17,7 @@ const EmailInput = ({email, setEmail, focused, setFocused, error}) => {
               onChange={(e) => setEmail(e.target.value)}
               onFocus={()=> setFocused(true)}
               onBlur={()=> setFocused(false)}
+              autoComplete="email" 
               required
               />
         </div>
@@ -26,53 +27,6 @@ const EmailInput = ({email, setEmail, focused, setFocused, error}) => {
 }
 
 export default EmailInput
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
