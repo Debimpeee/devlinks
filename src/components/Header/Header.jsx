@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <div className='header'>
-      <div className="heatherContent">
+      <div className="headerContent">
         <div className="dev">
             <img src="images/Group 252.svg" alt="logo-image" />
         </div>

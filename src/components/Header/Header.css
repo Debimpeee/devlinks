@@ -3,7 +3,7 @@
     padding: 1.5rem;
 }
 
-.heatherContent{
+.headerContent{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,6 +43,11 @@
     border-radius: 8px;
 }
 
+.links:hover,
+.user:hover{
+    color: #633CFF;
+}
+
 .links.active,
 .user.active{
     background-color: #EFEBFF;
@@ -54,4 +59,64 @@
     border: 1px solid #633CFF;
     padding: 11px 27px;
     border-radius: 8px;
+    cursor: pointer;
 }
+.prev:hover{
+    background-color: #EFEBFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

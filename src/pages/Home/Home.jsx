@@ -1,12 +1,14 @@
 import React from 'react'
 import "./Home.css"
+import Skeleton from '../../components/Skeleton/Skeleton'
 
 
 const Home = () => {
   return (
     <div className='home'>
       <div className="screen">
-        <img src="images/preview-section.jpg" alt="screen" />
+        <Skeleton/>
+        {/* <img src="images/preview-section.jpg" alt="screen" /> */}
       </div>
 
       <div className="customize">
