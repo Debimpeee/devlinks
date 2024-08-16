@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Home.css"
 import Skeleton from '../../components/Skeleton/Skeleton'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -8,7 +9,6 @@ const Home = () => {
     <div className='home'>
       <div className="screen">
         <Skeleton/>
-        {/* <img src="images/preview-section.jpg" alt="screen" /> */}
       </div>
 
       <div className="customize">
@@ -17,10 +17,10 @@ const Home = () => {
               <h3>Customize your links</h3>
               <p>Add/edit/remove links below and then share all your profiles with the world!</p>
           </div>
-          <div className="addLink">
+          <Link to="/frameTwo" className="addLink">
               <p>+</p>
               <p>Add new link</p>
-          </div>
+          </Link>
           <div className="getStarted">
               <div className="startedImg">
                 <img src="images/Group 273.jpg" alt="" />
