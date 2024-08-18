@@ -27,6 +27,8 @@
     flex-direction: column;
     background-color: #fff;
     border-radius: 12px;
+    width: 100%;
+    height: auto;
 }
 
 hr {
@@ -39,7 +41,9 @@ hr {
 .customizeCont{
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 26px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 15px;
     gap: 40px;
 }
 
@@ -65,7 +69,7 @@ hr {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    padding: 11px, 27px, 11px, 27px;
+    padding: 11px 27px 11px 27px;
     color: #633CFF;
     border: 1px solid #633CFF;
     gap: 8px;
@@ -78,61 +82,15 @@ hr {
     font-weight: 600;
 }
 
-.getStarted{
-    padding: 20px;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 12px;
-    gap: 40px;
-    height: 500px;
-}
-
-.startedCont{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.startedImg img{
-    width: 160px;
-}
-
-.startedText{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.startedText h3{
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 48px;
-    color: #333333;
-}
-
-.startedText p{
-    padding: 0 7rem;
-    line-height: 24px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #737373;
-}
-
-.btnCont{
+.btnContt{
     display: flex;
     justify-content: flex-end;
-    padding: 16px 40px 24px 40px;
+    padding: 10px 40px 15px 40px;
 }
 
-.btnCont button{
+.btnContt button{
     color:#FFFFFF;
     background-color: #633CFF;
-    opacity: 25%;
     border: none;
     padding: 9px 27px 11px 27px;
     border-radius: 8px;
@@ -140,121 +98,71 @@ hr {
     font-size: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .frameTwo{
-    background-color: #FAFAFA;
-    padding: 0 1.5rem 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.screenTwo{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 4rem;
-    border-radius: 8px;
-    width: 560px;
-    height: 834px;
-}
-
-.customize{
+.dropDownCont{
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 12px;
-} */
-
-
-/* .hash{
-    display: flex;
-    align-items: center;
+    gap: 24px;
+    height: 758px;
+    width: auto;
 }
 
-.sub{
+.dropDown{
+    padding: 20px;
+    background-color: #FAFAFA;
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding: 20px;
+    border-radius: 12px;
+    gap: 40px;
+    height: 228px; */
 }
 
 .reLink{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
- .frameTwo{
-    background-color: #FAFAFA;
-    padding: 0 1.5rem 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-}  */
-
-/* .frameTwo{
-    background-color: #FAFAFA;
-    padding: 0 1.5rem 1.5rem;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.bottomTwo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 8px;
 }
 
-.bottomTwo div{
-    width: 100%;
-    height: 44px;
-    border-radius: 8px;
-    background-color: #EEEEEE;
-    display: flex;
-    flex-direction: column;
-}
- 
-.bottomTwo img{
-    height: 18px;
+.reLink h4{
+    font-weight: 400;
+    line-height: 24px;
+    color: #737373;
+    font-size: 1rem;
 }
 
-.sub{
-    display: flex;
-}
-
-.screenTwo{
-    background-color: #fff;
+.hash{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 4rem;
-    border-radius: 8px;
-    width: 560px;
-    height: 834px;
+    gap: 5px;
 }
 
-.customizeTwo{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 12px;
-} */
+.hash h4{
+    font-weight: 700;
+    line-height: 24px;
+    color: #737373;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+
+[
+    {
+        "name": "Github",
+        "image": "images/github-solid.svg"
+    },
+    {
+        "name": "Frontend Mentor",
+        "image": "images/frontend-solid.svg"
+    },
+    {
+        "name": "Twitter",
+        "image": "images/twitter-solid.svg"
+    },
+    {
+        "name": "LinkedIn",
+        "image": "images/linkedin-solid.svg"
+    },
+    {
+        "name": "Youtube",
+        "image": "images/youtube-solid.svg"
+    },
+    {
+        "name": "Facebook",
+        "image": "images/facebook-solid.svg"
+    },
+    {
+        "name": "Twitch",
+        "image": "images/twitch-solid.svg"
+    },
+    {
+        "name": "Dev.to",
+        "image": "images/devto-solid.svg"
+    },
+    {
+        "name": "Codewars",
+        "image": "images/codewars-solid.svg"
+    },
+    {
+        "name": "FreeCodeCamp",
+        "image": "images/codepen-solid.svg"
+    },
+    {
+        "name": "Gitlab",
+        "image": "images/gitlab-solid.svg"
+    },
+    {
+        "name": "Hashnode",
+        "image": "images/hashnode-solid.svg"
+    },
+    {
+        "name": "Stack Overflow",
+        "image": "images/stackoverflow-solid.svg"
+    }
+]
+  

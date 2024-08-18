@@ -1,20 +1,17 @@
 import React, { useState } from 'react'
-import './AllLinks.css'
+import './Platform.css'
 
-const AllLinks = () => {
-  const [linkList, setLinkList] = useState("Github")
+const Platform = () => {
+  const [platform, setPlatform] = useState("Github")
 
   return (
-    <div className='allLinks'>
+    <div className='platform'>
       <label>
         Platform
         <select 
-        value={linkList}
-        onChange={e=> setLinkList(e.target.value)}>
-          <option value="Github">
-            <img src="images/github-bold.svg" alt="github-bold" />
-            Github
-          </option>
+        value={platform}
+        onChange={e=> setPlatform(e.target.value)}>
+          <option value="Github">Github</option>
           <option value="Frontend Mentor">Frontend Mentor</option>
           <option value="Twitter">Twitter</option>
           <option value="LinkedIn">LinkedIn</option>
@@ -33,8 +30,7 @@ const AllLinks = () => {
   )
 }
 
-export default AllLinks
-
+export default Platform
 
 
 
