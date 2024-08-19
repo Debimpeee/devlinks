@@ -15,6 +15,10 @@ const FrameTwo = () => {
     setDropDown([...dropDown, {}])
   } 
 
+  const removeDropDown = (indexToRemove) => {
+    setDropDown(dropDown.filter((_, index) => index !== indexToRemove))
+  }
+
   return (
     <div className='frameTwo'>
       <div className="screen">
@@ -41,7 +45,7 @@ const FrameTwo = () => {
                       <PiEqualsLight />
                       <h4>Link#{index + 1}</h4>
                   </div>
-                      <h4>Remove</h4>
+                      <h4 onClick={() => removeDropDown(index)}>Remove</h4>
                 </div>
                 
                 <div className="linksDropDown">
