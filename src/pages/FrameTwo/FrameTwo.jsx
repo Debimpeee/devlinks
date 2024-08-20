@@ -5,11 +5,14 @@ import { PiEqualsLight } from "react-icons/pi";
 import CustomDropdown from '../../components/CustomDropdown/CustomDropdown'
 import Links from '../../components/Links/Links'
 import SimpleBarReact from "simplebar-react";
+import platform from "../../components/platform.json"
+
 
 import 'simplebar-react/dist/simplebar.min.css';
 
 const FrameTwo = () => {
   const [dropDown, setDropDown] = useState([])
+  const [selectedPlatform, setSelectedPlatform] = useState([])
 
   const addDropDown = () =>{
     setDropDown([...dropDown, {}])
@@ -21,12 +24,12 @@ const FrameTwo = () => {
 
   return (
     <div className='frameTwo'>
-      <div className="screen">
+      <div className="screenTwo">
         <SkeletonTwo/>
       </div>
 
-      <div className="customize">
-        <div className="customizeCont">
+      <div className="customizee">
+        <div className="customizeeCont">
           <div className="customizeText">
               <h3>Customize your links</h3>
               <p>Add/edit/remove links below and then share all your profiles with the world!</p>

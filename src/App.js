@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
-import FrameTwo from './pages/FrameTwo/FrameTwo';
+// import FrameTwo from './pages/FrameTwo/FrameTwo';
+import Profile from './pages/Profile/Profile';
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
     <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/frameTwo" element={<FrameTwo />} />
-        {/* <Route path="/profile" element={<Profile />} />
-        <Route path="/preview" element={<Preview />} /> */}
+        {/* <Route path="/frameTwo" element={<FrameTwo />} /> */}
+        <Route path="/profile" element={<Profile />} />
+        {/* <Route path="/preview" element={<Preview />} />  */}
       </Routes>
     </BrowserRouter>
   );

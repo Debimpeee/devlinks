@@ -2,6 +2,7 @@ import React from 'react'
 import "./SkeletonTwo.css"
 import SimpleBarReact from "simplebar-react";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
+import bottomTwo from "../bottomTwo.json"
 
 import 'simplebar-react/dist/simplebar.min.css';
 
@@ -21,17 +22,28 @@ const SkeletonTwo = () => {
                     </div>
                     <SimpleBarReact style={{ maxHeight: '300px', width: '100%' }}>
                             <div className="bottomTwo">
-
-                                <div className='divide' style={{background: '#1A1A1A'}}>
-                                    <div className="sub">
-                                        <img src="images/github-solid.svg" alt="" />
-                                        <p>Github</p>
+                                {bottomTwo.map((item, index) => (
+                                    <div className='divide' style={{background: item.background, border: item.borderColor ? `1px solid ${item.borderColor}`: ''}} key={index}>
+                                        <div className="sub">
+                                            <img src={item.image} alt={item.text} />
+                                            <p style={{color: item.textColor}}>{item.text}</p>
+                                        </div>
+                                        <div className="sidearr">
+                                            <HiOutlineArrowSmallRight size={15} style={{color: item.textColor}} />                                        
+                                        </div>
                                     </div>
-                                    <div className="sidearr">
-                                        <HiOutlineArrowSmallRight size={15} style={{color: '#ffff'}} />                                        
-                                    </div>
-                                </div>
+                                ))}
+                            </div>
+                    </SimpleBarReact>
+                </div>
+        </div>
+    </div>
+  )
+}
 
+export default SkeletonTwo
+
+{/* 
                                 <div className='divide' style={{background: '#ffff', border: '1px solid #D9D9D9'}}>
                                     <div className="sub">
                                         <img src="images/frontend-solid.svg" alt="" />
@@ -151,15 +163,7 @@ const SkeletonTwo = () => {
                                         <HiOutlineArrowSmallRight size={15} style={{color: '#ffff'}} />                                        
                                     </div>
                                 </div>    
-                            </div>
-                    </SimpleBarReact>
-                </div>
-        </div>
-    </div>
-  )
-}
-
-export default SkeletonTwo
+                            </div> */}
 
 
 

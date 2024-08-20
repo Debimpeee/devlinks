@@ -1,0 +1,93 @@
+[
+    {
+        "background": "#1A1A1A",
+        "image": "images/github-solid.svg",
+        "text": "Github",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#ffff",
+        "image": "images/frontend-solid.svg",
+        "text": "Frontend Mentor",
+        "textColor": "#000",
+        "borderColor": "#D9D9D9"
+    },
+    {
+        "background": "#43B7E9",
+        "image": "images/twitter-solid.svg",
+        "text": "Twitter",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#1A1A1A",
+        "image": "images/linkedin-solid.svg",
+        "text": "LinkedIn",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#EE3939",
+        "image": "images/youtube-solid.svg",
+        "text": "Youtube",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#2442AC",
+        "image": "images/facebook-solid.svg",
+        "text": "Facebook",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#EE3FC8",
+        "image": "images/twitch-solid.svg",
+        "text": "Twitch",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#333333",
+        "image": "images/devto-solid.svg",
+        "text": "Dev.to",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#8A1A50",
+        "image": "images/codewars-solid.svg",
+        "text": "Codewars",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#302267",
+        "image": "images/codepen-solid.svg",
+        "text": "FreeCodeCamp",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#EB4925",
+        "image": "images/gitlab-solid.svg",
+        "text": "Gitlab",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#0330D1",
+        "image": "images/hashnode-solid.svg",
+        "text": "Hashnode",
+        "textColor": "#ffff",
+        "borderColor": ""
+    },
+    {
+        "background": "#1A1A1A",
+        "image": "images/stackoverflow-solid.svg",
+        "text": "Stack Overflow",
+        "textColor": "#ffff",
+        "borderColor": ""
+    }
+]
