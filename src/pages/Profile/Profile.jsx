@@ -10,7 +10,7 @@ const Profile = () => {
   // }
   return (
     <div className='profile'>
-        <div className="screen">
+        <div className="profileScreen">
           <Skeleton/>
         </div>
 

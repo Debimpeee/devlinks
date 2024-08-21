@@ -1,30 +1,31 @@
 .profile{
     background-color: #FAFAFA;
     padding: 0 1.5rem 1.5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
     gap: 1.5rem;
 }
 
-.screen{
+.profileScreen{
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 4rem;
     border-radius: 8px;
-    width: 560px;
+    /* width: 560px; */
     height: 834px;
 }
 
 .imageSizText,
 .profilePicText{
     height: 193px;
-    width: 193px;
+    /* width: 193px; */
 }
 
 .image {
     height: 193px;
-    width: 193px;
+    /* width: 193px; */
     background: #EFEBFF;
     border-radius: 12px;
     display: flex;
@@ -54,8 +55,9 @@ hr {
 .profileCont{
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 10px;
+    padding: 40px;
     gap: 40px;
+    height: 739px;
 }
 
 .profileText{
@@ -84,8 +86,8 @@ hr {
     background-color: #FAFAFA;
     /* border: 1px solid #633CFF; */
     gap: 12px;
-    /* width: 728px;
-    height: 233px; */
+    /* 
+     */
     /* cursor: pointer; */
 }
 
@@ -107,38 +109,6 @@ hr {
     border-radius: 12px;
     gap: 40px;
     height: 500px;
-}
-
-.startedCont{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.startedImg img{
-    width: 160px;
-}
-
-.startedText{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.startedText h3{
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 48px;
-    color: #333333;
-}
-
-.startedText p{
-    padding: 0 7rem;
-    line-height: 24px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #737373;
 }
 
 .btnCont{

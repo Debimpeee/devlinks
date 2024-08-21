@@ -34,7 +34,7 @@ const FrameTwo = () => {
               <h3>Customize your links</h3>
               <p>Add/edit/remove links below and then share all your profiles with the world!</p>
           </div>
-          <div className="addLink" onClick={addDropDown}>
+          <div className="addLinkTwo" onClick={addDropDown}>
               <p>+</p>
               <p>Add new link</p>
           </div>

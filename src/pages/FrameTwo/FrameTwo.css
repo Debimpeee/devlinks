@@ -1,28 +1,23 @@
-
+/* 
 .frameTwo{
     background-color: #FAFAFA;
     padding: 0 1.5rem 1.5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 1.5rem;
 }
 
-.screen{
+.screenTwo{
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 4rem;
     border-radius: 8px;
-    width: 560px;
     height: 834px;
 }
 
-.screen img{
-    height: 631px;
-    width: 307px;
-}
-
-.customize{
+.customizee{
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -38,8 +33,6 @@ hr {
   }
 
 .customizeCont{
-    display: flex;
-    flex-direction: column;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -64,12 +57,12 @@ hr {
     color: #737373;
 }
 
-.addLink {
+.addLinkTwo {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    padding: 11px 27px 11px 27px;
+    padding: 11px;
     color: #633CFF;
     border: 1px solid #633CFF;
     gap: 8px;
@@ -102,9 +95,7 @@ hr {
 .dropDownCont{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: auto;
-    overflow: auto;
+    height: 750px;
 }
 
 .dropDown{
@@ -118,7 +109,6 @@ hr {
 .reLink{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     gap: 8px;
 }
 
@@ -141,23 +131,4 @@ hr {
     color: #737373;
     font-size: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ */
