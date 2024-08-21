@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import './CustomDropdown.css'
-import platform from "../platform.json"
+// import platform from "../platform.json"
 import SimpleBarReact from "simplebar-react";
 
 import 'simplebar-react/dist/simplebar.min.css';
 
-const CustomDropdown = () => {
+const CustomDropdown = ({onSelect, platform}) => {
     const [selectedPlatform, setSelectedPlatform] = useState(platform[0])
     const [isOpen, setIsOpen] = useState(false)
 
     const handleSelection = (platform) =>{
       setSelectedPlatform(platform)
       setIsOpen(false)
+      onSelect(platform)
     }
 
   return (
@@ -45,7 +46,6 @@ const CustomDropdown = () => {
 }
 
 export default CustomDropdown
-
 
 
 

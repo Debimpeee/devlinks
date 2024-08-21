@@ -7,7 +7,6 @@ import Links from '../../components/Links/Links'
 import SimpleBarReact from "simplebar-react";
 import platform from "../../components/platform.json"
 
-
 import 'simplebar-react/dist/simplebar.min.css';
 
 const FrameTwo = () => {
@@ -20,12 +19,23 @@ const FrameTwo = () => {
 
   const removeDropDown = (indexToRemove) => {
     setDropDown(dropDown.filter((_, index) => index !== indexToRemove))
+    setSelectedPlatform(selectedPlatform.filter((_, index) => index !== indexToRemove))
+  }
+
+  const handleSelection = (selectedPlatform, index) => {
+    const updatedPlatform = [...selectedPlatform];
+    updatedPlatform[index] = selectedPlatform;
+    setSelectedPlatform(updatedPlatform)
+  }
+
+  const handleSave = () => {
+    console.log('Saved platforms:', selectedPlatform);
   }
 
   return (
     <div className='frameTwo'>
       <div className="screenTwo">
-        <SkeletonTwo/>
+        <SkeletonTwo platform={selectedPlatform}/>
       </div>
 
       <div className="customizee">
@@ -52,7 +62,10 @@ const FrameTwo = () => {
                 </div>
                 
                 <div className="linksDropDown">
-                  <CustomDropdown/>
+                  <CustomDropdown
+                    onSelect={(platform) => handleSelection(platform, index)}
+                    platform={platform}
+                  />
                 </div>
 
                 <div className="linkDropDown">
@@ -66,7 +79,7 @@ const FrameTwo = () => {
 
         <hr />
         <div className="btnContt">
-          <button>Save</button>
+          <button onClick={handleSave}>Save</button>
         </div>
         
       </div>
